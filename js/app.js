@@ -59,7 +59,7 @@ function createTableBody() {
     let imgTd = document.createElement('td');
     let img = document.createElement('img');
     let str = lsData[i].image;
-    str = `./img/` + str + `.png`;
+    str = `./img/` + str.toLowerCase() + `.png`;
     imgTd.innerHTML = `<img src='${str}'>`;
 
     tr.appendChild(imgTd);
